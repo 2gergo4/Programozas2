@@ -21,12 +21,12 @@ public class ElectricScooter extends Vehicle {
     @Override
     public double calculateDailyCost() {
         return getBaseDailyRate() * 0.9;
-    }
+    }   // a megadott napidíjat megszorozza 0.9-el és úgy jön ki a végleges ár.
 
     @Override
     public String toCsvString() {
         return String.format("SCOOTER;%s;%s;%.2f;%b;%d",
-                getId(), getBrand(), getBaseDailyRate(), isRented(), rangeKm);
+                getId(), getBrand(), getBaseDailyRate(), isRented(), rangeKm);  // ez pedig maga a megadott értékekkel lévő teljes roller.
     }
 
     @Override

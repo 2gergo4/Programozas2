@@ -20,7 +20,7 @@ public class Car extends Vehicle {
 
     @Override
     public double calculateDailyCost() {
-        double extraFee = (numberOfDoors > 4) ? 15.0 : 5.0;
+        double extraFee = (numberOfDoors > 4) ? 15.0 : 5.0; // Ha legalább 5 ajtós akkor 15 euró plusz dij.
         return getBaseDailyRate() + extraFee;
     }
 

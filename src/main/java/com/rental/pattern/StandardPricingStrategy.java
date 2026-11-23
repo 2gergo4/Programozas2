@@ -11,6 +11,6 @@ public class StandardPricingStrategy implements PricingStrategy {
 
     @Override
     public String getStrategyName() {
-        return "Standard Pricing (0% discount)";
+        return "Alapértelmezett árazás (0% akció)";
     }
 }
